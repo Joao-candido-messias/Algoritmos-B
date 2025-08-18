@@ -36,11 +36,23 @@ int main() {
                     cin >> carro.placa;
                     cout << "Hora de entrada: ";
                     cin >> carro.horaEntrada;
-                    
+
                     //ROTINA QUE VERIFICA SE ESTA PLACA JÁ ESTÁ NA GARAGEM
-                    garagem[ quantidadeCarros ] = carro;
-                    quantidadeCarros++;
-                    cout << "Imprimindo o ticket....\n";
+                    bool jaExiste = false;
+                    for(int i = 0; i<quantidadeCarros; i++){
+                        if(garagem[i].placa == carro.placa){
+                            jaExiste = true;
+                            break;
+                        }
+                    }
+
+                    if(jaExiste){
+                        cout << "Este carro já esta na garagem.";
+                    }else{
+                        garagem[ quantidadeCarros ] = carro;
+                        quantidadeCarros++;
+                        cout << "Imprimindo o ticket....\n";
+                    }   
                 }
                 break;
             case 2:
