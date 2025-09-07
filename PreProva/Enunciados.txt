@@ -1,0 +1,41 @@
+1.
+Faça um programa que leia um vetor de 10 inteiros e mostre o maior e o menor valor, além da posição em que cada um aparece.
+
+2.
+Leia um número inteiro n e mostre os n primeiros números da sequência de Fibonacci.
+
+3.
+Leia o nome e a nota de 5 alunos. Mostre a média da turma e os nomes dos alunos com nota acima da média.
+
+4.
+Faça um programa que leia uma string e conte quantas vogais e quantas consoantes ela possui.
+
+5.
+Leia dois vetores de 5 elementos inteiros cada. Gere e mostre um terceiro vetor formado pela união dos dois (sem repetição).
+
+6.
+Leia uma matriz 3x3 de inteiros e mostre:
+a) a soma dos elementos da diagonal principal
+b) a soma dos elementos da diagonal secundária.
+
+7.
+Crie um programa que implemente uma função recursiva para calcular o fatorial de um número inteiro positivo.
+
+8.
+Faça um programa que leia a idade de várias pessoas. O programa termina quando for digitado um valor negativo. Ao final, mostre:
+
+quantidade de pessoas lidas
+
+média de idade
+
+maior idade.
+
+9.
+Leia uma matriz 4x4 e verifique se ela é simétrica (isto é, se mat[i][j] == mat[j][i] para todos os i, j).
+
+10.
+Implemente uma fila usando vetor. O programa deve ter opções para:
+1 – Inserir elemento
+2 – Remover elemento
+3 – Mostrar fila
+4 – Sair
