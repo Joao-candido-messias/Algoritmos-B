@@ -11,7 +11,7 @@ Leia o nome e a nota de 5 alunos. Mostre a média da turma e os nomes dos alunos
 Faça um programa que leia uma string e conte quantas vogais e quantas consoantes ela possui. ✅
 
 5.
-Fazer um programa que tenha um método que receba uma frase e retorne essa frase totalmente em maiúscula.
+Fazer um programa que tenha um método que receba uma frase e retorne essa frase totalmente em maiúscula.✅
 
 6. ✅
 Leia uma matriz 3x3 de inteiros e mostre:
@@ -22,7 +22,7 @@ b) a soma dos elementos da diagonal secundária.
 Crie um programa que implemente uma função recursiva para calcular o fatorial de um número inteiro positivo.
 
 8.
-Faça um programa que leia a idade de várias pessoas. O programa termina quando for digitado um valor negativo. Ao final, mostre:
+Faça um programa que leia a idade de várias pessoas. O programa termina quando for digitado um valor negativo. Ao final, mostre:✅
 
 quantidade de pessoas lidas
 
