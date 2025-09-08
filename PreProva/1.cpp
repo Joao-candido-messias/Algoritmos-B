@@ -5,31 +5,25 @@
 
 using namespace std;
 
-int main(){
+int main() {
     int vetor[TAM];
-    int media, menor, maior;
+    int media, menor, maior, posMaior, posMenor;
 
-    media= cont  = menor = maior = 0;
+    media = menor = maior = posMaior = posMenor = 0;
 
-    //Rotina que lê TAM números inteiros
-    for(int i = 0; i<TAM; i++){
-        cout >> "Insiria um número inteiro." >> endl
-        cin << vetor[i];
+    // Rotina que lê TAM números inteiros
+    for(int i = 0; i < TAM; i++) {
+        cout << "Insira um número inteiro: " << endl;
+        cin >> vetor[i];
     }
 
-    //Rotina que verifica e imprime o menor número o menor número inteiro inserido
-    calcularMenorNumero(vetor,TAM,menor);
+    // Rotina que checa e imprime o menor numero inteiro inserido.
+    menor = checarMenorNumeroInteiro(vetor, TAM, posMenor);
+    cout << "Menor numero: " << menor << endl <<"Posicao no vetor: " << posMenor << endl;
 
-    //  //Rotina que verifica e imprime o maior número inteiro inserido
-    // for(int i = 0; I<TAM; i++){
-    //     if(vetor[i]>maior){
-    //         maior = vetor[i];
-    //     }
-    // }
+    //Rotina que checa e imprime o maior numero inteiro inserido
+    maior = checarMaiorNumeroInteiro(vetor, TAM, posMaior);
+    cout << "Maior numero " << maior << endl << "Posicao no vetor: " << posMaior << endl;
 
-    // //Rotina que calcula e imprime a média dos números inteiros inseridos
-    // for(int i = 0; i < TAM; i++){
-    //     cont =+ vetor[i];
-    // }
-
+    return 0;
 }
