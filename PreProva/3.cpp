@@ -1,10 +1,15 @@
 #include<iostream>
 #include <string>
-#include "metodos.h"
+//#include "metodos.h"
 
 using namespace std;
 
 #define TAM 2
+
+struct Aluno{
+    string nome;
+    int matricula;
+};
 
 int main(){
     Aluno alunos[TAM];
@@ -16,14 +21,14 @@ int main(){
         cout << "Insira o nome do Aluno: " << endl;  
         getline(cin, alunos[i].nome);
         cout << "Insira a nota do Aluno: " << endl;
-        cin >> alunos[i].nota;
+        cin >> alunos[i].matricula;
     }
 
     //Rotina que calcula a media das notas de TAM anlunos
-    media = calculaMedia(alunos, TAM);
+   // media = calculaMedia(alunos, TAM);
 
     //Rotina que mostra o nome dos alunos acima da média
-    alunosAcimaDaMedia(alunos, TAM, media);
+    //alunosAcimaDaMedia(alunos, TAM, media);
 
     return 0;
 }
