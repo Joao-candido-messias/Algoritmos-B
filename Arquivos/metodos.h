@@ -30,7 +30,7 @@ void preencheNomePessoa(Pessoa pessoas[], int tamanho) {
         cout << "Insira um nome completo: ";
         getline(cin, pessoas[i].nomeCompleto);
 
-        // Extrai o sobrenome (última palavra)
+        // Extrai o sobrenome
         size_t pos = pessoas[i].nomeCompleto.find_last_of(' ');
         if (pos != string::npos) {
             pessoas[i].sobreNome = pessoas[i].nomeCompleto.substr(pos + 1);
