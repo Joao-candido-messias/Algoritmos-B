@@ -25,5 +25,6 @@ AO FINAL, ESSES DADOS (nomeCompleto e sobreNome) devem ser salvos em um arquivo 
 
 Alexandre de Oliveira Zamberlan; Zamberlan Carlos Alberto Parreira; Parreira Luisa Figueiredo; Figueiredo
 
-6)Construa um programa (com módulo/método) que leia n nomes de pessoas DE UM ARQUIVO DE ORIGEM, armazena em um vetor de nomes e os exiba na tela. Porém, é necessário GRAVAR ESSES NOMES JUNTAMENTE COM A QUANTIDADE DE CARACTERES EM UM ARQUIVO DESTINO.
+✅6)Construa um programa (com módulo/método) que leia n nomes de pessoas DE UM ARQUIVO DE ORIGEM, armazena em um vetor de nomes e os exiba na tela. Porém, é necessário GRAVAR ESSES NOMES JUNTAMENTE COM A QUANTIDADE DE CARACTERES EM UM ARQUIVO DESTINO.
 
+Para proxima aula ordenar a lista do ultimo exercicio do Zamberlan
