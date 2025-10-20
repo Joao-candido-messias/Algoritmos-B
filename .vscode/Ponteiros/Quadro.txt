@@ -1,0 +1,14 @@
+#Gestão de Ponteiros e Alocação Dinâmica
+
+-Ponteiros é uma variável que armazena UM ENDEREÇO DE MEMÓRIA
+-Por exemplo:
+    int idade;
+
+
+-Toda matriz/Todo vetor é um ponteiro
+
+
+Enunciado:
+Fazer um programa em cpp que receba um vetor com "n" inteiros.
+1° criar o popular(sortear numeros)
+2° Criar um localizar ParesImpares
