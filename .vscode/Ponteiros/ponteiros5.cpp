@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cctype>
+#include <algorithm>
 
 #define TAM 3
 using namespace std;
@@ -19,11 +21,19 @@ void exibe(string *v, int n) {
     }
 }
 
+//Metodo que normaliza minhas strings
+string toUpper(const string &s) {
+    string temp = s;
+    transform(temp.begin(), temp.end(), temp.begin(),
+              [](unsigned char c){ return toupper(c); });
+    return temp;
+}
+
 //Metodo que busca nome em um vetor de nomes
 void buscarNome(string *v, string nome, int n){
    bool encontrado = false;
    for(int i = 0; i<n; i++){
-        if(v[i] == nome){
+        if(toUpper(v[i]) == toUpper(nome)){
             encontrado = true;
             cout << "O nome " << nome << " foi encontrado na posição: " << i << "." << endl;
             break;
@@ -37,15 +47,15 @@ void buscarNome(string *v, string nome, int n){
 }
 
 int main() {
-   string vetor[TAM];
-   popula(vetor, TAM);
+    string vetor[TAM];
+    popula(vetor, TAM);
    
-   string nome;
+    string nome;
 
-   cout << "Insira um nome a ser procurado." << endl;
-   getline(cin, nome);
+    cout << "Insira um nome a ser procurado." << endl;
+    getline(cin, nome);
 
-   buscarNome(vetor, nome, TAM);
+    buscarNome(vetor, nome, TAM);
 
-   return 0;
+    return 0;
 }
