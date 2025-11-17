@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <ctime>
 
 using namespace std;
 
@@ -85,11 +86,21 @@ void cadastrar(Degustacao vet[], int &qtd, int tam, string nomeArquivo){
 
     Degustacao d;
 
-    cin.ignore();
-    cout << "Data: ";
-    getline(cin, d.dataDegustacao);
+    // Pega data da máquina
+    time_t t = time(0);
+    tm* now = localtime(&t);
+
+    int dia = now->tm_mday;
+    int mes = now->tm_mon + 1;
+    int ano = now->tm_year + 1900;
+
+    d.dataDegustacao = 
+        (dia < 10 ? "0" + to_string(dia) : to_string(dia)) + "/" +
+        (mes < 10 ? "0" + to_string(mes) : to_string(mes)) + "/" +
+        to_string(ano);
 
     cout << "Nome do alimento/bebida: ";
+    cin.ignore();
     getline(cin, d.nomeAlimento);
 
     cout << "Nota (1 a 5): ";
@@ -116,7 +127,7 @@ void listar(Degustacao vet[], int qtd){
     }
 
     for(int i = 0; i < qtd; i++){
-        cout << "\nRegistro " << i + 1 << endl;
+        cout << "\nDegustação n° " << i + 1 << endl;
         cout << "Data: " << vet[i].dataDegustacao << endl;
         cout << "Alimento: " << vet[i].nomeAlimento << endl;
         cout << "Nota: " << vet[i].nota << endl;
