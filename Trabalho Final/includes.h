@@ -171,6 +171,6 @@ void remover(Degustacao vet[], int &qtd, string nomeArquivo){
 
 //Função com "Return 0; E mensagem de despedida do sistema.
 void sair(){
-    cout << "Bye :)\n";
+    cout << "Obrigada por usar o sistema! (｡*‿*｡)\nVolte sempre ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა\n";
 }
 
