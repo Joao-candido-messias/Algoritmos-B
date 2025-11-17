@@ -42,5 +42,5 @@ string pesquisar(){
 
 //Função com "Return 0; E mensagem de despedida do sistema.
 void sair(){
-
+    cout << "Bye :)" << endl;
 }
